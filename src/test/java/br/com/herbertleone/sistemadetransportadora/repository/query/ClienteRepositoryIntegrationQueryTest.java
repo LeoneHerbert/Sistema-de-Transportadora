@@ -62,19 +62,4 @@ public class ClienteRepositoryIntegrationQueryTest {
         Cliente cliente = clienteRepository.findByTelefone("981491256");
         assertTrue(cliente.getTelefone().equals("981491256"));
     }
-
-    @Test
-    public void deveRetornarTodosOsClientesOrdenadosEmOrdemCrescente() {
-
-        /*
-         List<Cliente> clientes;
-        clientes = clienteRepository
-                .todos(Sort.by("nome").ascending());
-
-        assertTrue(clientes.get(0).getNome().equals("Amigo"));
-        assertTrue(clientes.get(1).getNome().equals("Chefe"));
-        assertTrue(clientes.get(2).getNome().equals("Chefe Mais Antigo"));
-        assertTrue(clientes.get(3).getNome().equals("Novo Chefe"));*/
-    }
-
 }

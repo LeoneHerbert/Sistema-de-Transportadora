@@ -23,5 +23,4 @@ public class Cidade {
 
     @Column(nullable = false)
     private BigDecimal taxa;
-
 }

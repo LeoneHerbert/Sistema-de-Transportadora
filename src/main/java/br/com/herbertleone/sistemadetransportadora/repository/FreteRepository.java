@@ -13,4 +13,7 @@ public interface FreteRepository extends JpaRepository<Frete, Integer> {
    @Query(value = "From Frete where cliente_id = ?1")
    List<Frete> todos(Integer clienteId, Sort sort);
 
+   @Query(value = "From Frete")
+   List<Frete> todosOsFretesDoMaiorValorParaOMenorValor(Sort sort);
+
 }

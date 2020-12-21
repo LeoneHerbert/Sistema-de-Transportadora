@@ -63,16 +63,4 @@ public class CidadeRepositoryIntegrationQueryTest {
         Cidade cidade = cidadeRepository.findByNome("Salvador");
         assertTrue(cidade.getNome().equals("Salvador"));
     }
-
-    @Test
-    public void deveRetornarTodosOsCidadesOrdenadosEmOrdemCrescente() {
-/*
-        List<Cidade> cidades;
-        cidades = cidadeRepository.todos(Sort.by("nome").ascending());
-
-        assertTrue(cidades.get(0).getNome().equals("Amigo"));
-        assertTrue(cidades.get(1).getNome().equals("Chefe"));
-        assertTrue(cidades.get(2).getNome().equals("Chefe Mais Antigo"));
-        assertTrue(cidades.get(3).getNome().equals("Novo Chefe"));*/
-    }
 }
